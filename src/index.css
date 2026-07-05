@@ -1,0 +1,164 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
+@font-face {
+  font-family: "Bagoos Extended";
+  src: url('/BagossExtended-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoos Extended";
+  src: url('/BagossExtended-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Standard";
+  src: url('/BagossStandard-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Condensed";
+  src: url('/BagossCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Standard";
+  src: url('/BagossStandard-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Standard";
+  src: url('/BagossStandard-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Standard";
+  src: url('/BagossStandard-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bagoss Standard";
+  src: url('/BagossStandard-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MBrand Serif';
+  src: url('https://files.catbox.moe/rqzj3c.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mozilla Text';
+  src: url('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/mozillatext/MozillaText%5Bwght%5D.ttf') format('truetype-variations');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mozilla Headline';
+  src: url('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/mozillaheadline/MozillaHeadline%5Bwdth,wght%5D.ttf') format('truetype-variations');
+  font-weight: 200 700;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mozilla Text Bold';
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/mozilla-text@latest/latin-700-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+body {
+  background-color: #222D33;
+  transition: background-color 500ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.do-text {
+  color: #ffffff;
+  transition: color 500ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+body.is-light-bg .do-text {
+  color: #222D33;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  /* Per-line left-to-right underline animation for headlines */
+  .headline-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 0.92em;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: background-size 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .group:hover .headline-underline {
+    background-size: 100% 1px;
+  }
+  /* Force Bagoos Extended when available */
+  .font-bagoos {
+    font-family: "Bagoos Extended", sans-serif !important;
+  }
+  /* Bagoss Standard Medium */
+  .font-bagoss-standard {
+    font-family: "Bagoss Standard", sans-serif !important;
+  }
+  /* Bagoss Condensed Regular */
+  .font-bagoss-condensed {
+    font-family: "Bagoss Condensed", sans-serif !important;
+  }
+  .font-stretch-semi-condensed {
+    font-stretch: 87.5%;
+  }
+  .font-stretch-semi-expanded {
+    font-stretch: 112.5%;
+  }
+  .font-mozillatext-bold {
+    font-family: "Mozilla Text Bold", sans-serif !important;
+    font-weight: normal !important;
+  }
+  .tick-circle {
+    stroke-dasharray: 151;
+    stroke-dashoffset: 151;
+    animation: tick-draw 0.5s ease-out forwards;
+  }
+  .tick-check {
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    animation: tick-draw 0.35s ease-out 0.45s forwards;
+  }
+}
+
+@keyframes tick-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
