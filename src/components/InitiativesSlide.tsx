@@ -12,7 +12,7 @@ export const initiatives: Initiative[] = [
   {
     id: 'propos',
     name: 'Propós',
-    image: 'https://picsum.photos/seed/propos/800/1000',
+    image: '/letra-m.jpg',
     description: (
       <>
         Fundada en 2019, Propós es una{' '}
