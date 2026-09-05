@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset';
+
 export type DoItem = {
   id: string;
   name: string;
@@ -10,7 +12,7 @@ export const doItems: DoItem[] = [
   {
     id: 'bizbox',
     name: 'BizBox',
-    image: '/Captura de pantalla 2026-05-31 a las 22.23.59.png',
+    image: asset('/Captura de pantalla 2026-05-31 a las 22.23.59.png'),
     href: '#',
     description: (
       <>
@@ -25,26 +27,29 @@ export const doItems: DoItem[] = [
     ),
   },
   {
-    id: 'the-good',
-    name: 'The Good Initiative',
-    image: '/Sala Luces 02.png',
+    id: 'tickiz',
+    name: 'Tickiz',
+    image: asset('/tickiz.webp'),
     href: '#',
     description: (
       <>
-        Un evento para generar{' '}
+        La primera plataforma para la{' '}
         <span className="underline decoration-1 underline-offset-[4px]">
-          conversación y debate público
-        </span>{' '}en torno a los usos de la IA. Premios, conversaciones por distintas ciudades del país y un evento de cierre para reivindicar una{' '}
+          gestión de accesos y ticketing
+        </span>{' '}pensada para que cualquier organizador la use sin fricción. Nada de integraciones eternas ni curvas de aprendizaje: es{' '}
         <span className="underline decoration-1 underline-offset-[4px]">
-          inteligencia con propósito, responsable y para el desarrollo
-        </span>.
+          plug and play
+        </span>, lista para funcionar desde el primer minuto. Control de accesos, venta de entradas y datos del evento, todo en un solo lugar, tan{' '}
+        <span className="underline decoration-1 underline-offset-[4px]">
+          fácil de usar
+        </span>{' '}que se convierte en una extensión natural de cualquier equipo.
       </>
     ),
   },
   {
     id: 'undersummit',
     name: 'Undersummit',
-    image: '/hf_20260522_051919_1e0c5ee8-d683-41ba-a86b-37da5ca6ece1.png',
+    image: asset('/hf_20260522_051919_1e0c5ee8-d683-41ba-a86b-37da5ca6ece1.png'),
     href: '#',
     description: (
       <>

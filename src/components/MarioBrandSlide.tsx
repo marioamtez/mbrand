@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { asset } from '../utils/asset';
 
 const contractForms = {
   conferencia: { label: 'Contratar conferencia', title: 'Proponer conferencia', subject: 'Propuesta de conferencia' },
@@ -18,8 +19,8 @@ type Work = {
 const works: Work[] = [
   {
     id: '01',
-    image: '/2311Mario_0017-Alta.jpg',
-    downloads: { low: '/2311Mario_0017-Alta.jpg', high: '/2311Mario_0017-Alta_.jpg' },
+    image: asset('/2311Mario_0017-Alta.jpg'),
+    downloads: { low: asset('/2311Mario_0017-Alta.jpg'), high: asset('/2311Mario_0017-Alta_.jpg') },
     bullets: [
       <>Es <strong className="font-mozillatext-bold">consultor de branding</strong>, reputación y gestión de intangibles.</>,
       <>Está especializado en <strong className="font-mozillatext-bold">políticas no financieras</strong> y en el <strong className="font-mozillatext-bold">enfoque basado en derechos humanos</strong> (EBDH) en empresas.</>,
@@ -28,7 +29,7 @@ const works: Work[] = [
   },
   {
     id: '02',
-    image: '/CEO Nueva York.png',
+    image: asset('/CEO Nueva York.png'),
     bullets: [
       <>Fundó Propós en Barcelona, en 2019.</>,
       <>Ha trabajado en <strong className="font-mozillatext-bold">políticas de marca</strong> para administraciones públicas, como el Gobierno de España, el Gobierno de Aragón o Ayuntamiento de Madrid y con large y middle caps.</>,
@@ -37,7 +38,7 @@ const works: Work[] = [
   },
   {
     id: '03',
-    image: '/mario-martinez-larioja-2.jpg',
+    image: asset('/mario-martinez-larioja-2.jpg'),
     bullets: [
       <>Es <strong className="font-mozillatext-bold">Senior Advisor</strong> de la Cátedra UNESCO.</>,
       <>Fue director del <strong className="font-mozillatext-bold">Gabinete de Presidencia,</strong> Relaciones Institucionales y Acción Exterior del Gobierno de La Rioja.</>,
@@ -47,7 +48,7 @@ const works: Work[] = [
   },
   {
     id: '04',
-    image: '/CEO ONU Empresas.jpg',
+    image: asset('/CEO ONU Empresas.jpg'),
     bullets: [
       <>Fue personal investigador en la <strong className="font-mozillatext-bold">Universidad de La Rioja y la Cátedra UNESCO,</strong> en materia de comunicación y derechos humanos, investigando los sistemas mediáticos de la <strong className="font-mozillatext-bold">región del Magreb</strong>.</>,
       <>Ha desarrollado <strong className="font-mozillatext-bold">estancias profesionales</strong> en Reino Unido, Italia, Argelia, Túnez y Marruecos.</>,
@@ -58,7 +59,7 @@ const works: Work[] = [
   },
   {
     id: '05',
-    image: '/mario-martinez-2026.jpg',
+    image: asset('/mario-martinez-2026.jpg'),
     bullets: [
       <>En 2023, su <strong className="font-mozillatext-bold">sociedad adquirió Dirigentes</strong>, la revista económica más antigua en español (1986).</>,
       <>Tras una redefinición estratégica, la revista pasó a llamarse <strong className="font-mozillatext-bold">The Officer.</strong></>,

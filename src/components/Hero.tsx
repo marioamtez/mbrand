@@ -1,6 +1,7 @@
 import { Slide } from './Slide';
 import { FadeIn, ScrollLit } from './Reveal';
 import { motion } from 'framer-motion';
+import { asset } from '../utils/asset';
 
 const scrollToNext = () => {
   document.getElementById('slide-2')?.scrollIntoView({ behavior: 'smooth' });
@@ -17,10 +18,10 @@ export function Hero() {
               animate={{ rotate: 360 }}
               transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
               className="absolute -top-8 md:-top-14 left-2 md:left-0 w-12 h-12 md:w-16 md:h-16">
-              <img src="/sello.svg" alt="" className="w-full h-full" />
+              <img src={asset('/sello.svg')} alt="" className="w-full h-full" />
             </motion.div>
             <img
-              src="/header.svg"
+              src={asset('/header.svg')}
               alt="Mbrand"
               className="w-full h-auto" />
           </div>
@@ -46,22 +47,22 @@ export function Hero() {
           <br className="hidden md:block" />{' '}
           que conectan personas,{' '}
           <img
-            src="/personas.jpg"
+            src={asset('/personas.jpg')}
             className="inline-block w-[64px] h-[27px] md:w-[180px] md:h-[77px] object-cover rounded-[4px] align-middle -mt-2 md:-mt-4 mx-1 md:mx-2"
             alt="" />{' '}
           ideas,{' '}
           <img
-            src="/ideas.jpg"
+            src={asset('/ideas.jpg')}
             className="inline-block w-[64px] h-[27px] md:w-[180px] md:h-[77px] object-cover rounded-[4px] align-middle -mt-2 md:-mt-4 mx-1 md:mx-2"
             alt="" />{' '}
           propósitos{' '}
           <img
-            src="/propositos.jpg"
+            src={asset('/propositos.jpg')}
             className="inline-block w-[64px] h-[27px] md:w-[180px] md:h-[77px] object-cover rounded-[4px] align-middle -mt-2 md:-mt-4 mx-1 md:mx-2"
             alt="" />
           {' '}y marcas{' '}
           <img
-            src="/marcas.png"
+            src={asset('/marcas.png')}
             className="inline-block w-[64px] h-[27px] md:w-[180px] md:h-[77px] object-cover rounded-[4px] align-middle -mt-2 md:-mt-4 mx-1 md:mx-2"
             alt="" />
           {' '}entre sí para hacer crecer los{' '}

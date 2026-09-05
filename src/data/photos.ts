@@ -1,8 +1,10 @@
+import { asset } from '../utils/asset';
+
 export const PHOTOS = {
-  ceoUN: '/CEO Naciones Unidas.jpeg',
-  ceoONU: '/CEO ONU Empresas.jpg',
-  marioLogrono: '/Mario Legado Logroño 06.jpg',
-  marioMartinez: '/mario-martinez-2026.jpg',
+  ceoUN: asset('/CEO Naciones Unidas.jpeg'),
+  ceoONU: asset('/CEO ONU Empresas.jpg'),
+  marioLogrono: asset('/Mario Legado Logroño 02.jpg'),
+  marioMartinez: asset('/mario-martinez-2026.jpg'),
 };
 
 export const ALL_PHOTOS = [

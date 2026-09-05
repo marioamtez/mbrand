@@ -1,3 +1,5 @@
+import { asset } from '../utils/asset';
+
 export type NewsItem = {
   id: string;
   image: string;
@@ -12,7 +14,7 @@ export type NewsItem = {
 export const newsItems: NewsItem[] = [
   {
     id: 'mbrand-estrena-bizbox',
-    image: '/mario-martinez-2026.jpg',
+    image: asset('/mario-martinez-2026.jpg'),
     category: 'MBRAND',
     date: '22.11.25',
     headline: 'Mbrand estrena BizBox, el podcast sobre liderazgo de Mario Martínez',
@@ -30,13 +32,13 @@ export const newsItems: NewsItem[] = [
       </>
     ),
     gallery: [
-      '/CEO ONU Empresas.jpg',
-      '/Mario Legado Logroño 06.jpg',
+      asset('/CEO ONU Empresas.jpg'),
+      asset('/Mario Legado Logroño 02.jpg'),
     ],
   },
   {
     id: 'the-officer-popup-madrid',
-    image: '/CEO ONU Empresas.jpg',
+    image: asset('/CEO ONU Empresas.jpg'),
     category: 'THE OFFICER',
     date: '02.10.25',
     headline: 'The Officer abrirá un pop-up en el centro de Madrid con motivo de South Summit',
@@ -54,12 +56,12 @@ export const newsItems: NewsItem[] = [
       </>
     ),
     gallery: [
-      '/CEO Naciones Unidas.jpeg',
+      asset('/CEO Naciones Unidas.jpeg'),
     ],
   },
   {
     id: 'dirigentes-cede-testigo-the-officer',
-    image: '/CEO Naciones Unidas.jpeg',
+    image: asset('/CEO Naciones Unidas.jpeg'),
     category: 'PROPÓS',
     date: '12.09.25',
     headline: 'Dirigentes cede el testigo a The Officer tras un proceso de reflexión estratégica',
@@ -80,7 +82,7 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: 'the-officer-media-partner-south-summit-vds',
-    image: '/CEO ONU Empresas.jpg',
+    image: asset('/CEO ONU Empresas.jpg'),
     category: 'PROPÓS',
     date: '28.07.25',
     headline: 'The Officer, media partner en South Summit y VDS de 2025',
@@ -101,7 +103,7 @@ export const newsItems: NewsItem[] = [
   },
   {
     id: 'ai-for-good-awards-20-proyectos',
-    image: '/CEO Naciones Unidas.jpeg',
+    image: asset('/CEO Naciones Unidas.jpeg'),
     category: 'THE OFFICER',
     date: '18.06.25',
     headline: 'AI for Good Awards: estos son los 20 proyectos que pasan a la siguiente fase',
@@ -117,13 +119,13 @@ export const newsItems: NewsItem[] = [
     ),
     source: 'https://theofficer.es/ai-for-good-awards-estos-son-los-20-proyectos-que-pasan-a-la-siguiente-fase/',
     gallery: [
-      '/mario-martinez-2026.jpg',
-      '/CEO ONU Empresas.jpg',
+      asset('/mario-martinez-2026.jpg'),
+      asset('/CEO ONU Empresas.jpg'),
     ],
   },
   {
     id: 'mario-martinez-brandpulse-2025',
-    image: '/Mario Legado Logroño 06.jpg',
+    image: asset('/Mario Legado Logroño 02.jpg'),
     category: 'PROPÓS',
     date: '15.05.25',
     headline: 'Mario Martínez participa en el BrandPulse de 2025',

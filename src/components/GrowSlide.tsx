@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { asset } from '../utils/asset';
 
 export function GrowSlide() {
   const ref = useRef<HTMLElement | null>(null);
@@ -23,7 +24,7 @@ export function GrowSlide() {
         className="relative w-full min-h-screen flex items-center justify-center">
         {/* Two creative videos slightly overlapping Grow */}
         <motion.video
-          src="/01.mp4"
+          src={asset('/01.mp4')}
           autoPlay
           loop
           muted
@@ -31,7 +32,7 @@ export function GrowSlide() {
           style={{ opacity: photosOpacity, y: photosY }}
           className="absolute left-[3%] md:left-[7%] bottom-[2%] w-[38vw] max-w-[440px] object-contain rounded-md -rotate-3 shadow-2xl pointer-events-none z-0" />
         <motion.video
-          src="/02.mov"
+          src={asset('/02.mov')}
           autoPlay
           loop
           muted

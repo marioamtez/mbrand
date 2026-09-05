@@ -1,5 +1,6 @@
 import { Slide } from './Slide';
 import { RiseIn } from './Reveal';
+import { asset } from '../utils/asset';
 
 export type Initiative = {
   id: string;
@@ -12,7 +13,7 @@ export const initiatives: Initiative[] = [
   {
     id: 'propos',
     name: 'Propós',
-    image: '/letra-m.jpg',
+    image: asset('/letra-m.jpg'),
     description: (
       <>
         Fundada en 2019, Propós es una{' '}
@@ -38,7 +39,7 @@ export const initiatives: Initiative[] = [
   {
     id: 'the-officer',
     name: 'The Officer',
-    image: '/the-offic4r.jpg',
+    image: asset('/the-offic4r.jpg'),
     description: (
       <>
         La{' '}

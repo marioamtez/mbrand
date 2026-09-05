@@ -1,18 +1,19 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useMotionTemplate, type MotionValue } from 'framer-motion';
+import { asset } from '../utils/asset';
 
 const photos = {
-  mario: '/foro.jpg',                          // top-left
-  ceoUN: '/dat.jpg',                           // top-right
-  logrono: '/Libro-Suelo.jpg',                 // bottom-left
-  ceoONU: '/iaf-aragon-branding-logo-1.jpg',   // bottom-right
-  extra: '/4db9dc83-ce8e-4dfb-8e76-17809dfba7da_alta-libre-aspect-ratio_default_0_x800y355.jpg', // bottom-center
+  mario: asset('/foro.jpg'),                          // top-left
+  ceoUN: asset('/dat.jpg'),                           // top-right
+  logrono: asset('/Libro-Suelo.jpg'),                 // bottom-left
+  ceoONU: asset('/iaf-aragon-branding-logo-1.jpg'),   // bottom-right
+  extra: asset('/4db9dc83-ce8e-4dfb-8e76-17809dfba7da_alta-libre-aspect-ratio_default_0_x800y355.jpg'), // bottom-center
 };
 
 const bgs = {
-  ebdh: '/mario-martinez-rioja-derechos-humanos-05.webp',
-  unesco: '/mario-martinez-larioja-2.jpg',
-  aiforgood: '/Sala Luces 02.png',
+  ebdh: asset('/mario-martinez-rioja-derechos-humanos-05.webp'),
+  unesco: asset('/mario-martinez-larioja-2.jpg'),
+  aiforgood: asset('/Sala Luces 02.png'),
 };
 
 const outlineNumberStyle: React.CSSProperties = {
