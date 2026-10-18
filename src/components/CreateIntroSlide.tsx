@@ -215,16 +215,16 @@ export function CreateIntroSlide() {
           <span className="absolute top-[22%] left-[44%] w-2 h-2 rounded-full bg-white/60" />
 
           <h2 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mozillaHeadline font-stretch-semi-expanded font-normal text-[2.13rem] md:text-[3.83rem] lg:text-[5.1rem] leading-[1.02] tracking-tight text-white text-center max-w-[640px] md:max-w-[760px]">
-            Solo es{' '}
+            Making corporate{' '}
             <span
               style={outlineWordStyle}
               className="underline decoration-1 underline-offset-[6px] md:underline-offset-[10px]">
-              disruptivo
-            </span>{' '}si crecemos{' '}
+              truth
+            </span>{' '}sexy to beat the{' '}
             <span
               style={outlineWordStyle}
               className="underline decoration-1 underline-offset-[6px] md:underline-offset-[10px]">
-              todos
+              fake
             </span>.
           </h2>
         </motion.div>
