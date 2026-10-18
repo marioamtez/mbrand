@@ -49,6 +49,8 @@ function Plus({ className = '' }: { className?: string }) {
 type Principle = {
   n: string;
   image: string;
+  video?: string;
+  poster?: string;
   numSide: 'left' | 'right';
   textSide: 'left' | 'right';
   text: React.ReactNode;
@@ -84,6 +86,8 @@ const principles: Principle[] = [
   {
     n: '03',
     image: bgs.aiforgood,
+    video: asset('/logrono.mp4'),
+    poster: asset('/logrono-poster.jpg'),
     numSide: 'left',
     textSide: 'right',
     text: (
@@ -102,7 +106,19 @@ function PrincipleSlide({ data, clipTop, z }: { data: Principle; clipTop: Motion
   const clip = useMotionTemplate`inset(${clipTop}% 0 0 0)`;
   return (
     <motion.div style={{ clipPath: clip }} className={`absolute inset-0 ${z} overflow-hidden`}>
-      <img src={data.image} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      {data.video ? (
+        <video
+          src={data.video}
+          poster={data.poster ?? data.image}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover" />
+      ) : (
+        <img src={data.image} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      )}
       <div className="absolute inset-0 bg-black/55" />
 
       <div

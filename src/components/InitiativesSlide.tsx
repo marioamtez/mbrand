@@ -1,14 +1,12 @@
 import { Slide } from './Slide';
 import { RiseIn } from './Reveal';
 import { asset } from '../utils/asset';
-import { doItems } from '../data/doItems';
 
 export type Initiative = {
   id: string;
   name: string;
   description: React.ReactNode;
   image: string;
-  href?: string;
 };
 
 export const initiatives: Initiative[] = [
@@ -55,15 +53,6 @@ export const initiatives: Initiative[] = [
       </>
     ),
   },
-  ...doItems
-    .filter((item) => item.id === 'bizbox' || item.id === 'undersummit')
-    .map(({ id, name, description, image, href }) => ({
-      id,
-      name,
-      description,
-      image,
-      href: href && href !== '#' ? href : undefined,
-    })),
 ];
 
 export function InitiativesSlide() {
@@ -75,7 +64,7 @@ export function InitiativesSlide() {
           className="font-mozillaText font-normal text-[1.7rem] md:text-[2.76rem] lg:text-[3.83rem] leading-[1.05] tracking-tight text-center max-w-[1300px]">
           Estamos involucrados en el crecimiento de las{' '}
           <span className="underline decoration-1 underline-offset-[6px] md:underline-offset-[10px]">
-            cuatro grandes iniciativas
+            dos grandes iniciativas
           </span>{' '}
           que pusimos en marcha desde MBrand.
         </RiseIn>
