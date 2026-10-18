@@ -14,7 +14,7 @@ export function Hero() {
         <div className="relative w-full max-w-[1600px] mx-auto flex flex-col items-center justify-center mb-12 md:mb-20">
           <div className="w-full relative px-4 md:px-0">
             <img
-              src={asset('/mbrand-regular.svg')}
+              src={asset('/logosvg.svg')}
               alt="Mbrand"
               className="w-full h-auto" />
           </div>
