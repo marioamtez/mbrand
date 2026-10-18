@@ -39,7 +39,7 @@ export function DoItemsSlider({ items }: Props) {
                   className="w-[260px] md:w-[340px] lg:w-[420px] aspect-[3/4] object-cover rounded-md group-hover:opacity-90 transition-opacity" />
               </Link>
               <div className="flex flex-col gap-6 max-w-[700px]">
-                <h2 className="font-mozillaHeadline font-light text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
+                <h2 className="font-mozillaHeadline font-medium text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
                   {item.name}
                 </h2>
                 <p className="font-mozillaText font-light text-[1.7rem] leading-[2.4rem] tracking-tight">

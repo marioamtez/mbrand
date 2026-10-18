@@ -21,7 +21,7 @@ export function Hero() {
               <img src={asset('/sello.svg')} alt="" className="w-full h-full" />
             </motion.div>
             <img
-              src={asset('/header.svg')}
+              src={asset('/logo-goalking.svg')}
               alt="Mbrand"
               className="w-full h-auto" />
           </div>

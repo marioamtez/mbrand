@@ -38,7 +38,7 @@ export function InitiativeSlide({ id, name, description, image }: Props) {
         <div className="flex flex-col gap-6">
           <RiseIn
             as="h3"
-            className="font-mozillaHeadline font-light text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
+            className="font-mozillaHeadline font-medium text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
             {name}
           </RiseIn>
           <FadeIn delay={0.4}>
