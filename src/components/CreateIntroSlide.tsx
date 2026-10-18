@@ -107,12 +107,12 @@ function PrincipleSlide({ data, clipTop, z }: { data: Principle; clipTop: Motion
 
       <div
         style={outlineNumberStyle}
-        className={`absolute top-1/2 -translate-y-1/2 ${data.numSide === 'left' ? 'left-[6%]' : 'right-[6%]'} font-bagoss-standard font-light text-[8.5rem] md:text-[13.6rem] lg:text-[17rem] leading-[0.85] tracking-tighter`}>
+        className={`absolute top-1/2 -translate-y-1/2 ${data.numSide === 'left' ? 'left-[6%]' : 'right-[6%]'} font-bagoss-standard font-normal text-[8.5rem] md:text-[13.6rem] lg:text-[17rem] leading-[0.85] tracking-tighter`}>
         {data.n}
       </div>
 
       <div className={`absolute bottom-[14%] ${data.textSide === 'left' ? 'left-[6%]' : 'right-[6%]'} max-w-[440px] md:max-w-[520px] text-white`}>
-        <p className="font-mozillaText font-light text-[0.85rem] md:text-[0.96rem] lg:text-[1.06rem] leading-[1.4] tracking-tight">
+        <p className="font-mozillaText font-normal text-[0.85rem] md:text-[0.96rem] lg:text-[1.06rem] leading-[1.4] tracking-tight">
           {data.text}
         </p>
       </div>
@@ -231,7 +231,7 @@ export function CreateIntroSlide() {
 
         {/* STAGE 2 — Editorial body (text only) */}
         <motion.div style={{ opacity: s2, y: s2Y }} className="absolute inset-0 z-10">
-          <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mozillaText font-light text-[1.28rem] md:text-[1.91rem] lg:text-[2.34rem] leading-[1.2] tracking-tight text-white text-center max-w-[680px] md:max-w-[820px]">
+          <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mozillaText font-normal text-[1.28rem] md:text-[1.91rem] lg:text-[2.34rem] leading-[1.2] tracking-tight text-white text-center max-w-[680px] md:max-w-[820px]">
             Creamos, impulsamos y gestionamos{' '}
             <span className="underline decoration-1 underline-offset-[4px]">
               iniciativas propias

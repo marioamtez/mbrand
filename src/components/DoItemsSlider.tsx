@@ -42,7 +42,7 @@ export function DoItemsSlider({ items }: Props) {
                 <h2 className="font-mozillaHeadline font-medium text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
                   {item.name}
                 </h2>
-                <p className="font-mozillaText font-light text-[1.7rem] leading-[2.4rem] tracking-tight">
+                <p className="font-mozillaText font-normal text-[1.7rem] leading-[2.4rem] tracking-tight">
                   {item.description}
                 </p>
                 {item.href && (

@@ -21,7 +21,7 @@ export function Hero() {
         </div>
 
         {/* Editorial Paragraph */}
-        <ScrollLit className="font-mozillaHeadline font-light text-[2.13rem] leading-[1.1] md:text-[3.83rem] lg:text-[5.1rem] md:leading-[1.05] text-center max-w-[1200px] mx-auto tracking-tight text-white px-4">
+        <ScrollLit className="font-mozillaHeadline font-normal text-[2.13rem] leading-[1.1] md:text-[3.83rem] lg:text-[5.1rem] md:leading-[1.05] text-center max-w-[1200px] mx-auto tracking-tight text-white px-4">
           Es un{' '}
           <span className="underline decoration-1 underline-offset-[6px] md:underline-offset-[10px]">
             venture builder

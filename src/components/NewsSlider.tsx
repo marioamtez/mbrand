@@ -27,7 +27,7 @@ export function NewsSlider({ title = 'Noticias', items }: Props) {
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col">
         {/* Title */}
         <div className="px-4 md:px-16 pt-32 pb-10 flex items-end justify-between gap-6">
-          <h2 className="font-mozillaHeadline font-stretch-semi-expanded font-light text-[2.55rem] md:text-[4.25rem] lg:text-[5.53rem] leading-none tracking-tight text-white">
+          <h2 className="font-mozillaHeadline font-stretch-semi-expanded font-normal text-[2.55rem] md:text-[4.25rem] lg:text-[5.53rem] leading-none tracking-tight text-white">
             {title}
           </h2>
           <a

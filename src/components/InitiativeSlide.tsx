@@ -42,7 +42,7 @@ export function InitiativeSlide({ id, name, description, image }: Props) {
             {name}
           </RiseIn>
           <FadeIn delay={0.4}>
-            <p className="font-mozillaText font-light text-[1.7rem] leading-[2.4rem] tracking-tight">
+            <p className="font-mozillaText font-normal text-[1.7rem] leading-[2.4rem] tracking-tight">
               {description}
             </p>
           </FadeIn>
