@@ -7,9 +7,10 @@ type Props = {
   name: string;
   description: React.ReactNode;
   image: string;
+  href?: string;
 };
 
-export function InitiativeSlide({ id, name, description, image }: Props) {
+export function InitiativeSlide({ id, name, description, image, href }: Props) {
   const ref = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref as React.RefObject<HTMLElement>,
@@ -46,6 +47,18 @@ export function InitiativeSlide({ id, name, description, image }: Props) {
               {description}
             </p>
           </FadeIn>
+          {href && (
+            <FadeIn delay={0.5}>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-bagoss-condensed font-normal text-[0.74rem] tracking-[0.2em] uppercase text-white/80 hover:text-white transition-colors">
+                Saber más
+                <span className="text-[0.85rem]">→</span>
+              </a>
+            </FadeIn>
+          )}
         </div>
       </motion.div>
     </section>);

@@ -12,7 +12,7 @@ export const doItems: DoItem[] = [
   {
     id: 'bizbox',
     name: 'BizBox',
-    image: asset('/Captura de pantalla 2026-05-31 a las 22.23.59.png'),
+    image: asset('/bizbox.webp'),
     href: '#',
     description: (
       <>
@@ -49,20 +49,11 @@ export const doItems: DoItem[] = [
   {
     id: 'undersummit',
     name: 'Undersummit',
-    image: asset('/hf_20260522_051919_1e0c5ee8-d683-41ba-a86b-37da5ca6ece1.png'),
-    href: '#',
+    image: asset('/undersummit.webp'),
+    href: 'https://undersummit.es',
     description: (
       <>
-        Dos días de{' '}
-        <span className="underline decoration-1 underline-offset-[4px]">
-          inmersión en innovación y disrupción tecnológica
-        </span>. Un congreso de{' '}
-        <span className="underline decoration-1 underline-offset-[4px]">
-          4.000 corporates
-        </span>, con conversaciones interesantes y un networking de calidad alrededor del vino. La{' '}
-        <span className="underline decoration-1 underline-offset-[4px]">
-          narrativa del subsuelo
-        </span>: las tendencias emergentes que afloran. La innovación como un trayecto.
+        El evento de management y dirección más influyente de Europa. Un congreso de dos días que reúne anualmente a 1.000 CEOs para ganar criterio y conocimientos.
       </>
     ),
   },

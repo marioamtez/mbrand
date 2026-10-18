@@ -26,7 +26,8 @@ export function Home() {
           id={`initiative-${item.id}`}
           name={item.name}
           description={item.description}
-          image={item.image} />
+          image={item.image}
+          href={item.href} />
       )}
       <DoSlide />
       <DoItemsSlider items={doItems} />

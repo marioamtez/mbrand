@@ -5,6 +5,17 @@ import type { DoItem } from '../data/doItems';
 
 type Props = { items: DoItem[] };
 
+function SmartLink({ href, className, children }: { href: string; className?: string; children: React.ReactNode }) {
+  if (/^https?:\/\//.test(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return <Link to={href} className={className}>{children}</Link>;
+}
+
 export function DoItemsSlider({ items }: Props) {
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -29,7 +40,7 @@ export function DoItemsSlider({ items }: Props) {
             <article
               key={item.id}
               className="w-screen h-full flex-shrink-0 pl-16 md:pl-32 pr-8 md:pr-16 pt-28 md:pt-36 pb-16 md:pb-24 grid grid-cols-1 md:grid-cols-[auto_1fr] items-center gap-10 md:gap-20">
-              <Link to={item.href ?? '#'} className="block group">
+              <SmartLink href={item.href ?? '#'} className="block group">
                 <motion.img
                   src={item.image}
                   alt=""
@@ -37,7 +48,7 @@ export function DoItemsSlider({ items }: Props) {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.4 }}
                   className="w-[260px] md:w-[340px] lg:w-[420px] aspect-[3/4] object-cover rounded-md group-hover:opacity-90 transition-opacity" />
-              </Link>
+              </SmartLink>
               <div className="flex flex-col gap-6 max-w-[700px]">
                 <h2 className="font-mozillaHeadline font-medium text-[1.59rem] md:text-[2.55rem] lg:text-[3.19rem] leading-[0.95] tracking-tight">
                   {item.name}
@@ -46,12 +57,12 @@ export function DoItemsSlider({ items }: Props) {
                   {item.description}
                 </p>
                 {item.href && (
-                  <Link
-                    to={item.href}
+                  <SmartLink
+                    href={item.href}
                     className="inline-flex items-center gap-2 font-bagoss-condensed font-normal text-[0.74rem] tracking-[0.2em] uppercase text-black/80 hover:text-black transition-colors">
                     Saber más
                     <span className="text-[0.85rem]">→</span>
-                  </Link>
+                  </SmartLink>
                 )}
               </div>
             </article>
