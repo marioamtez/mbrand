@@ -41,14 +41,14 @@ export function Header() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-  const textColorClass = onLight ? 'text-[#222D33]' : 'text-white';
+  const textColorClass = onLight ? 'text-[#45505B]' : 'text-white';
   const logoFilter = onLight ? 'invert' : '';
   const headerStyle: React.CSSProperties = onTransparent
     ? { backgroundColor: 'transparent' }
     : scrolled
       ? onLight
         ? { backgroundColor: lightBg }
-        : { backgroundColor: '#222D33' }
+        : { backgroundColor: '#45505B' }
       : { backgroundColor: 'transparent' };
 
   const navLink = 'cursor-pointer hover:opacity-70 transition-opacity';
@@ -61,7 +61,7 @@ export function Header() {
         type="button"
         onClick={() => scrollToId('slide-1')}
         className="cursor-pointer hover:opacity-70 transition-opacity inline-flex items-center">
-        <img src={asset('/mbrand-logo.svg')} alt="Mbrand" className={`h-5 md:h-6 w-auto ${logoFilter}`} />
+        <img src={asset('/logosvg.svg')} alt="Mbrand" className={`h-5 md:h-6 w-auto ${logoFilter}`} />
       </button>
 
       <div className="font-mozillaText font-normal text-[0.96rem] md:text-[1.06rem] hidden md:flex items-center gap-6 tracking-tight leading-none">

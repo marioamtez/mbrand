@@ -68,7 +68,7 @@ export const initiatives: Initiative[] = [
 
 export function InitiativesSlide() {
   return (
-    <Slide id="slide-3" className="bg-[#222D33]">
+    <Slide id="slide-3" className="bg-[#45505B]">
       <div className="relative w-full px-4 md:px-16 pt-20 md:pt-24 pb-10 md:pb-12 flex flex-col items-center text-white max-w-[1500px] mx-auto gap-12 md:gap-16">
         <RiseIn
           as="p"

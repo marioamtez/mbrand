@@ -24,7 +24,7 @@ export function InitiativeSlide({ id, name, description, image, href }: Props) {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id={id}
-      className="relative w-full bg-[#222D33] overflow-hidden">
+      className="relative w-full bg-[#45505B] overflow-hidden">
       <motion.div
         style={{ opacity, y }}
         className="relative w-full px-4 md:px-16 py-6 md:py-10 grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-14 text-white max-w-[1500px] mx-auto">

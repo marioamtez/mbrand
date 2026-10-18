@@ -14,7 +14,7 @@ export function usePageBg() {
           bgColor = el.dataset.bg || '#ffffff';
         }
       });
-      document.body.style.backgroundColor = isLight ? bgColor : '#222D33';
+      document.body.style.backgroundColor = isLight ? bgColor : '#45505B';
       document.body.classList.toggle('is-light-bg', isLight);
     };
     update();

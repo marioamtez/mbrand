@@ -8,13 +8,13 @@ const scrollToNext = () => {
 
 export function Hero() {
   return (
-    <Slide id="slide-1" className="bg-[#222D33]">
+    <Slide id="slide-1" className="bg-[#45505B]">
       <div className="relative w-full min-h-screen pt-32 pb-24 px-4 md:px-8 flex flex-col items-center justify-center">
         {/* MBRAND Wordmark */}
         <div className="relative w-full max-w-[1600px] mx-auto flex flex-col items-center justify-center mb-12 md:mb-20">
           <div className="w-full relative px-4 md:px-0">
             <img
-              src={asset('/logombrand.svg')}
+              src={asset('/mbrand-regular.svg')}
               alt="Mbrand"
               className="w-full h-auto" />
           </div>

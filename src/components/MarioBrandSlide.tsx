@@ -81,7 +81,7 @@ export function MarioBrandSlide() {
       id="slide-mario-brand"
       data-light-bg
       data-bg="#FEFCEE"
-      className="relative w-full text-[#222D33]">
+      className="relative w-full text-[#45505B]">
       <div className="grid grid-cols-1 md:grid-cols-2 relative">
         {/* LEFT — Scrolling list of works */}
         <div className="md:col-span-1 px-4 md:px-10 lg:px-16 pt-32 pb-24 flex flex-col gap-24 md:gap-32">
@@ -92,13 +92,13 @@ export function MarioBrandSlide() {
                 alt=""
                 className="w-full aspect-[16/10] object-cover rounded-md" />
               {w.downloads &&
-                <div className="flex justify-end items-center gap-2 -mt-3 font-mozillaText font-normal text-[0.74rem] tracking-tight text-[#222D33]/70">
+                <div className="flex justify-end items-center gap-2 -mt-3 font-mozillaText font-normal text-[0.74rem] tracking-tight text-[#45505B]/70">
                   <span aria-hidden>↓</span>
-                  <a href={w.downloads.low} download className="hover:text-[#222D33] transition-colors">
+                  <a href={w.downloads.low} download className="hover:text-[#45505B] transition-colors">
                     LOW
                   </a>
                   <span>|</span>
-                  <a href={w.downloads.high} download className="hover:text-[#222D33] transition-colors">
+                  <a href={w.downloads.high} download className="hover:text-[#45505B] transition-colors">
                     HIGH
                   </a>
                 </div>}
@@ -106,7 +106,7 @@ export function MarioBrandSlide() {
                 {w.bullets.map((bullet, i) =>
                   <li
                     key={i}
-                    className="flex items-start gap-2.5 font-mozillaText font-normal text-[0.85rem] md:text-[0.96rem] lg:text-[1.06rem] leading-[1.5] text-[#222D33]/85">
+                    className="flex items-start gap-2.5 font-mozillaText font-normal text-[0.85rem] md:text-[0.96rem] lg:text-[1.06rem] leading-[1.5] text-[#45505B]/85">
                     <span aria-hidden className="shrink-0 mt-[0.2em]">•</span>
                     <span>{bullet}</span>
                   </li>
@@ -122,13 +122,13 @@ export function MarioBrandSlide() {
             <div className="hidden md:block" />
             <div className="flex flex-col items-center gap-10 md:gap-12">
               <div className="flex flex-col items-center gap-3">
-                <h2 className="font-mozillaHeadline font-stretch-semi-expanded font-normal text-[2.98rem] lg:text-[4.25rem] xl:text-[5.53rem] leading-[0.95] tracking-tight text-center text-[#222D33]">
+                <h2 className="font-mozillaHeadline font-stretch-semi-expanded font-normal text-[2.98rem] lg:text-[4.25rem] xl:text-[5.53rem] leading-[0.95] tracking-tight text-center text-[#45505B]">
                   Mario<br />Martínez
                 </h2>
-                <p className="mt-[12px] font-mozillaText font-normal text-[0.85rem] md:text-[0.96rem] leading-[1.5] text-center max-w-[420px] text-[#222D33]/85">
+                <p className="mt-[12px] font-mozillaText font-normal text-[0.85rem] md:text-[0.96rem] leading-[1.5] text-center max-w-[420px] text-[#45505B]/85">
                   Emprendedor español. Chairman en Mbrand y editor de The Officer. Es consultor de branding y reputación, especializado en empresa y derechos humanos.
                 </p>
-                <p className="font-mozillaText font-normal text-[0.74rem] md:text-[0.85rem] leading-[1.5] text-center max-w-[420px] text-[#222D33]/70">
+                <p className="font-mozillaText font-normal text-[0.74rem] md:text-[0.85rem] leading-[1.5] text-center max-w-[420px] text-[#45505B]/70">
                   Premio Napolitan Victory Award 2023 por la Washington Academy of Political Arts and Sciences.
                 </p>
               </div>
@@ -137,13 +137,13 @@ export function MarioBrandSlide() {
                   <a
                     href="mailto:head@mbrand.es"
                     aria-label="Contactar"
-                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#222D33]/70 text-[#222D33] hover:bg-[#222D33] hover:text-[#FEFCEE] transition-colors">
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#45505B]/70 text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
                       <rect x="2.5" y="5" width="19" height="14" rx="2" />
                       <polyline points="3,7 12,13 21,7" strokeLinejoin="round" />
                     </svg>
                   </a>
-                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#222D33]">
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#45505B]">
                     Contactar
                   </span>
                 </div>
@@ -154,12 +154,12 @@ export function MarioBrandSlide() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#222D33]/70 text-[#222D33] hover:bg-[#222D33] hover:text-[#FEFCEE] transition-colors">
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#45505B]/70 text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                   </a>
-                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#222D33]">
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#45505B]">
                     LinkedIn
                   </span>
                 </div>
@@ -170,14 +170,14 @@ export function MarioBrandSlide() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#222D33]/70 text-[#222D33] hover:bg-[#222D33] hover:text-[#FEFCEE] transition-colors">
+                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#45505B]/70 text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
                       <rect x="2.5" y="2.5" width="19" height="19" rx="5" />
                       <circle cx="12" cy="12" r="4" />
                       <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
                     </svg>
                   </a>
-                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#222D33]">
+                  <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap font-bagoss-standard font-normal text-[0.74rem] tracking-tight text-[#45505B]">
                     Instagram
                   </span>
                 </div>
@@ -189,7 +189,7 @@ export function MarioBrandSlide() {
                     key={kind}
                     type="button"
                     onClick={() => setActiveForm(kind)}
-                    className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#222D33]/70 font-mozillaText font-normal text-[0.85rem] tracking-tight text-[#222D33] hover:bg-[#222D33] hover:text-[#FEFCEE] transition-colors">
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#45505B]/70 font-mozillaText font-normal text-[0.85rem] tracking-tight text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors">
                     {contractForms[kind].label}
                   </button>
                 )}
@@ -212,35 +212,35 @@ export function MarioBrandSlide() {
         }} />
 
       {activeForm &&
-        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-[#222D33]/60 px-4">
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-[#45505B]/60 px-4">
           <div className="relative w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#FEFCEE] rounded-md p-8 md:p-10">
             <button
               type="button"
               aria-label="Cerrar"
               onClick={closeForm}
-              className="absolute top-4 right-4 w-8 h-8 inline-flex items-center justify-center rounded-full hover:bg-[#222D33]/10 transition-colors text-[#222D33]">
+              className="absolute top-4 right-4 w-8 h-8 inline-flex items-center justify-center rounded-full hover:bg-[#45505B]/10 transition-colors text-[#45505B]">
               ✕
             </button>
 
             {formStatus === 'success' ?
               <div className="flex flex-col items-center text-center gap-4 py-6">
                 <svg viewBox="0 0 52 52" className="w-16 h-16">
-                  <circle cx="26" cy="26" r="24" fill="none" stroke="#222D33" strokeWidth="2" className="tick-circle" />
-                  <path d="M14 27l8 8 16-16" fill="none" stroke="#222D33" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="tick-check" />
+                  <circle cx="26" cy="26" r="24" fill="none" stroke="#45505B" strokeWidth="2" className="tick-circle" />
+                  <path d="M14 27l8 8 16-16" fill="none" stroke="#45505B" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="tick-check" />
                 </svg>
-                <h3 className="font-mozillaHeadline font-medium text-2xl tracking-tight text-[#222D33]">
+                <h3 className="font-mozillaHeadline font-medium text-2xl tracking-tight text-[#45505B]">
                   ¡Enviado con éxito!
                 </h3>
-                <p className="font-mozillaText font-normal text-[0.85rem] leading-[1.5] text-[#222D33]/70">
+                <p className="font-mozillaText font-normal text-[0.85rem] leading-[1.5] text-[#45505B]/70">
                   Estudiaremos tu propuesta lo antes posible y te daremos una respuesta en el email indicado.
                 </p>
               </div>
               :
               <>
-                <h3 className="font-mozillaHeadline font-medium text-2xl tracking-tight text-[#222D33] mb-3">
+                <h3 className="font-mozillaHeadline font-medium text-2xl tracking-tight text-[#45505B] mb-3">
                   {contractForms[activeForm].title}
                 </h3>
-                <p className="font-mozillaText font-normal text-[0.85rem] leading-[1.5] text-[#222D33]/70 mb-6">
+                <p className="font-mozillaText font-normal text-[0.85rem] leading-[1.5] text-[#45505B]/70 mb-6">
                   Estudiaremos tu propuesta lo antes posible y te daremos una respuesta en el email indicado.
                 </p>
                 <form
@@ -256,58 +256,58 @@ export function MarioBrandSlide() {
                   className="flex flex-col gap-4">
                   <input type="hidden" name="_subject" />
                   <input type="hidden" name="_captcha" value="false" />
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Nombre
                     <input
                       type="text"
                       name="nombre"
                       required
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33]" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B]" />
                   </label>
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Apellidos
                     <input
                       type="text"
                       name="apellidos"
                       required
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33]" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B]" />
                   </label>
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Email
                     <input
                       type="email"
                       name="email"
                       required
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33]" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B]" />
                   </label>
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Teléfono
                     <input
                       type="tel"
                       name="telefono"
                       required
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33]" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B]" />
                   </label>
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Título de la propuesta
                     <input
                       type="text"
                       name="titulo"
                       required
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33]" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B]" />
                   </label>
-                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#222D33]">
+                  <label className="flex flex-col gap-1.5 font-mozillaText font-normal text-[0.85rem] text-[#45505B]">
                     Describe la propuesta
                     <textarea
                       name="descripcion"
                       required
                       rows={4}
-                      className="px-3 py-2 rounded border border-[#222D33]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#222D33] focus:outline-none focus:border-[#222D33] resize-none" />
+                      className="px-3 py-2 rounded border border-[#45505B]/30 bg-transparent font-mozillaText text-[0.9rem] text-[#45505B] focus:outline-none focus:border-[#45505B] resize-none" />
                   </label>
                   <button
                     type="submit"
                     disabled={formStatus === 'sending'}
-                    className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#222D33]/70 font-mozillaText font-normal text-[0.85rem] tracking-tight text-[#222D33] hover:bg-[#222D33] hover:text-[#FEFCEE] transition-colors disabled:opacity-50 disabled:pointer-events-none">
+                    className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-full border border-[#45505B]/70 font-mozillaText font-normal text-[0.85rem] tracking-tight text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors disabled:opacity-50 disabled:pointer-events-none">
                     {formStatus === 'sending' ? 'Enviando...' : 'Enviar'}
                   </button>
                 </form>

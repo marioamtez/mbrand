@@ -18,7 +18,7 @@ export function GrowSlide() {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id="slide-2"
-      className="relative w-full min-h-screen bg-[#222D33] overflow-hidden">
+      className="relative w-full min-h-screen bg-[#45505B] overflow-hidden">
       <motion.div
         style={{ opacity, y }}
         className="relative w-full min-h-screen flex items-center justify-center">
