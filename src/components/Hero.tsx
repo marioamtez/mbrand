@@ -1,6 +1,5 @@
 import { Slide } from './Slide';
 import { FadeIn, ScrollLit } from './Reveal';
-import { motion } from 'framer-motion';
 import { asset } from '../utils/asset';
 
 const scrollToNext = () => {
@@ -14,14 +13,8 @@ export function Hero() {
         {/* MBRAND Wordmark */}
         <div className="relative w-full max-w-[1600px] mx-auto flex flex-col items-center justify-center mb-12 md:mb-20">
           <div className="w-full relative px-4 md:px-0">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-              className="absolute -top-8 md:-top-14 left-2 md:left-0 w-12 h-12 md:w-16 md:h-16">
-              <img src={asset('/sello.svg')} alt="" className="w-full h-full" />
-            </motion.div>
             <img
-              src={asset('/logo-goalking.svg')}
+              src={asset('/logombrand.svg')}
               alt="Mbrand"
               className="w-full h-auto" />
           </div>
