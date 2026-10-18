@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"MBrand Serif"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-        bagoos: ['"Bagoos Extended"', 'sans-serif'],
-        mozillaText: ['"Mozilla Text"', 'sans-serif'],
-        mozillaHeadline: ['"Mozilla Headline"', 'sans-serif'],
+        serif: ['Goalking', 'serif'],
+        sans: ['Goalking', 'sans-serif'],
+        bagoos: ['Goalking', 'sans-serif'],
+        mozillaText: ['Goalking', 'sans-serif'],
+        mozillaHeadline: ['Goalking', 'sans-serif'],
       },
       colors: {
         watson: {
