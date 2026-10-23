@@ -5,6 +5,7 @@ import { GrowSlide } from '../components/GrowSlide';
 import { InitiativesSlide, initiatives } from '../components/InitiativesSlide';
 import { InitiativeSlide } from '../components/InitiativeSlide';
 import { DoSlide } from '../components/DoSlide';
+import { LogosSlide } from '../components/LogosSlide';
 import { DoItemsSlider } from '../components/DoItemsSlider';
 import { doItems } from '../data/doItems';
 import { NewsSlider } from '../components/NewsSlider';
@@ -28,6 +29,7 @@ export function Home() {
           description={item.description}
           image={item.image} />
       )}
+      <LogosSlide />
       <DoSlide />
       <DoItemsSlider items={doItems} />
       <NewsSlider title="Noticias" items={officerNews} />
