@@ -135,7 +135,7 @@ export function MarioBrandSlide() {
               <div className="flex flex-row items-center justify-center gap-3 md:gap-4">
                 <div className="group relative">
                   <a
-                    href="mailto:head@mbrand.es"
+                    href="mailto:ccastro@mbrand.es"
                     aria-label="Contactar"
                     className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-[#45505B]/70 text-[#45505B] hover:bg-[#45505B] hover:text-[#FEFCEE] transition-colors">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
@@ -150,7 +150,7 @@ export function MarioBrandSlide() {
 
                 <div className="group relative">
                   <a
-                    href="https://www.linkedin.com/in/marioemartinez"
+                    href="https://www.linkedin.com/in/marioamtez/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -166,7 +166,7 @@ export function MarioBrandSlide() {
 
                 <div className="group relative">
                   <a
-                    href="https://www.instagram.com/mariomartinezm"
+                    href="https://www.instagram.com/soymariobrand"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"

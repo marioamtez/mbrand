@@ -47,6 +47,7 @@ export function DoItemsSlider({ items }: Props) {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.4 }}
+                  style={{ objectPosition: item.imagePosition }}
                   className="w-[260px] md:w-[340px] lg:w-[420px] aspect-[3/4] object-cover rounded-md group-hover:opacity-90 transition-opacity" />
               </SmartLink>
               <div className="flex flex-col gap-6 max-w-[700px]">
